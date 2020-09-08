@@ -58,13 +58,13 @@ class fileReadWrite {
 				//checks if artist is already listed in HashMap
 				if (hmap.containsKey(artist)) {
 					//increments the Integer value for the artist,
-                    hmap.replace(artist, hmap.get(artist) + 1);
+					hmap.replace(artist, hmap.get(artist) + 1);
 				}
 				//adds new artist to HashMap and increases number of artists
-                else {
+				else {
 					hmap.put(artist, 1);
 					numberOfArtists += 1;
-                }
+				}
 			}
 			scan.close();
 		}
@@ -84,7 +84,7 @@ class fileReadWrite {
 		//obtains all keys in HashMap and stores in a set
 		Set<String> keys = hmap.keySet();
 		//writes number of artists in file
-		pw.println( "Number of artists: " + numberOfArtists);
+		pw.println("Number of artists: " + numberOfArtists);
 		//used to explain formatting within file
 		pw.println("Formatting for file: \rArtist Name: number of apperances");
 		//loop to write artists into file along with their number of occurances
