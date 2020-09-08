@@ -1,6 +1,8 @@
 # CISC3130-lab2
 Java program written to read a spotify csv files and create an output file based on the artists in the file
 and how many times they appear.  
+Source code for the program can be found within the Main.java file. A sample output file is included which is titled "Artists-WeekOf09032020.txt" 
+while the csv file used is titled "regional-global-weekly-latest.csv"  
 ## Implementation
 This program uses a Scanner object to read a csv file, then splits the comma seperated values using
 the .split() method. A custom regex code is used to handle any extra commas within the CSV entries. These values are stored in a String array so the artist name can be pulled from index
