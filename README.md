@@ -5,7 +5,7 @@ Source code for the program can be found within the Main.java file. A sample out
 while the csv file used is titled "regional-global-weekly-latest.csv"  
 ## Implementation
 This program uses a Scanner object to read a csv file, then splits the comma seperated values using
-the .split() method. A custom regex code is used to handle any extra commas within the CSV entries. These values are stored in a String array so the artist name can be pulled from index
+the .split() method. A custom regex code is used to handle any extra commas within the CSV entries ([Source](https://stackoverflow.com/a/15739087)). These values are stored in a String array so the artist name can be pulled from index
 n (in this program n = 2.) The artist name is then stored in a HashMap using a String as the key and an 
 integer as the value. I chose to use a HashMap since it easily allows checking for duplicates using the
 .containsKey(String key) method. This also simplifies the process of writing the file; we can pull a list of all the
